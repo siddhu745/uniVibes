@@ -1,0 +1,68 @@
+div.post-page div.image{
+    max-height: 200px;
+    display: flex;
+}
+
+@media screen and (min-width:800px) {
+    div.post-page div.image{
+        max-height: 500px;
+    }
+}
+
+div.post-page div.image img{
+    object-fit: cover;
+}
+
+div.post-page a{
+    text-decoration: underline;
+    color: rgb(0, 201, 27);
+}
+
+div.post-page h1{
+    text-align: center;
+    margin: 5px 0px ;
+}
+
+div.post-page time{
+    display: block;
+    text-align: center;
+    font-size: .8rem;
+    color: #aaa;
+}
+
+div.post-page div.author{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+div.post-page div.content p{
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+div.edit-row{
+    text-align: center;
+    
+}
+
+div.post-page .edit-btn{
+    background-color: black;
+    color: white;
+    gap: 5px;
+    padding: 15px 25px;
+    display: inline-flex;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: center;
+}
+
+a svg{
+    height: 20px;
+}
+
+
+
