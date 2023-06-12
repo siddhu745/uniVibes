@@ -27,8 +27,11 @@ export default function IndexPage() {
     });
   }, []);
 
+ 
+
   useEffect(() => {
     filterPosts(selectedOption);
+    // eslint-disable-next-line
   }, [selectedOption]);
 
   const filterPosts = (option) => {
@@ -46,7 +49,7 @@ export default function IndexPage() {
 
       {filteredPosts.length > 0 &&
         filteredPosts.map((post) => {
-          return <Post {...post} />;
+          return <Post key={post._id} {...post} />;
         })}
     </>
   );
