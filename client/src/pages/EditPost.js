@@ -26,6 +26,7 @@ export default function EditPost() {
         setSelectedOption(postInfo.option);
       });
     });
+    // eslint-disable-next-line
   }, []);
 
   async function updatePost(ev) {

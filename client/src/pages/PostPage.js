@@ -17,6 +17,7 @@ export default function PostPage() {
         setPostInfo(postInfo);
       });
     });
+    // eslint-disable-next-line
   }, []);
 
   if (!postInfo) return "";
@@ -49,7 +50,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`http://localhost:5000/${postInfo.cover}`} />
+        <img src={`http://localhost:5000/${postInfo.cover}`} alt="cover"/>
       </div>
 
       <div
