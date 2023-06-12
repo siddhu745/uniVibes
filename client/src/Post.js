@@ -9,11 +9,13 @@ export default function Post({
   createdAt,
   author,
 }) {
+
+    // eslint-disable-next-line
   return (
     <div className="post">
       <div className="image">
         <Link to={`/post/${_id}`}>
-          <img src={"http://localhost:5000/" + cover} />
+          <img src={"http://localhost:5000/" + cover} alt="blog image"/>
         </Link>
       </div>
       <div className="texts">

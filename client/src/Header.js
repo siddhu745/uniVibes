@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "./userContext";
 
@@ -13,6 +13,8 @@ export default function Header() {
         setUserInfo(userInfo);
       });
     });
+
+    // eslint-disable-next-line
   }, []);
 
   function logout() {
@@ -25,7 +27,7 @@ export default function Header() {
   }
 
   const username = userInfo?.username;
-
+    // eslint-disable-next-line
   return (
     <header>
       <Link to="/" className="logo">
