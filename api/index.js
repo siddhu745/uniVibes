@@ -24,7 +24,7 @@ mongoose.connect(url);
 app.use(
   cors({
     credentials: true,
-    origin: "https://main--calm-scone-7fec9c.netlify.app/",
+    origin: "https://main--calm-scone-7fec9c.netlify.app",
   })
 );
 app.use(express.json());
