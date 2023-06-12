@@ -1,3 +1,5 @@
+/* eslint-disable react/no-direct-mutation-state */
+
 import { useContext, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "./userContext";
@@ -27,7 +29,7 @@ export default function Header() {
   }
 
   const username = userInfo?.username;
-    // eslint-disable-next-line
+// eslint-disable-next-line
   return (
     <header>
       <Link to="/" className="logo">
@@ -37,8 +39,10 @@ export default function Header() {
         {username && (
           <>
             hello, {username}
+            
             <Link to="/create">Create New Post</Link>
-            <a href="" onClick={logout}>LogOut</a>
+            
+            <p onClick={logout}>LogOut</p>
           </>
         )}
 

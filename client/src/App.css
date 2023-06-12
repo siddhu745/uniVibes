@@ -44,9 +44,11 @@ header a.logo {
 
 header nav {
   display: flex;
+  align-items: center;
   gap: 45px;
   font-size: 1.2rem;
   font-weight: 500;
+
 }
 
 div.post {
