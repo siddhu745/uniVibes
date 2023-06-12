@@ -15,7 +15,7 @@ require('dotenv').config()
 const app = express();
 
 const salt = bcrypt.genSaltSync(10);
-const secret = "ajfioopiqurpoijfjj899asddf";
+const secret = process.env.SECRET;
 
 const url = process.env.URL
 
@@ -24,7 +24,7 @@ mongoose.connect(url);
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: "https://main--calm-scone-7fec9c.netlify.app/",
   })
 );
 app.use(express.json());
