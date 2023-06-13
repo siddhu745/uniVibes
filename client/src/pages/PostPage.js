@@ -12,7 +12,7 @@ export default function PostPage() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/post/${id}`).then((response) => {
+    fetch(`https://univibes-backend.onrender.com/post/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setPostInfo(postInfo);
       });
@@ -50,7 +50,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`http://localhost:5000/${postInfo.cover}`} alt="cover"/>
+        <img src={`https://univibes-backend.onrender.com/${postInfo.cover}`} alt="cover"/>
       </div>
 
       <div

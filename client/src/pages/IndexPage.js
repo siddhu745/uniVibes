@@ -19,7 +19,7 @@ export default function IndexPage() {
   const [selectedOption, setSelectedOption] = useState("all");
 
   useEffect(() => {
-    fetch("http://localhost:5000/post").then((response) => {
+    fetch("https://univibes-backend.onrender.com/post").then((response) => {
       response.json().then((posts) => {
         setPosts(posts);
         setFilteredPosts(posts);

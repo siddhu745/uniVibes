@@ -15,7 +15,7 @@ export default function Post({
     <div className="post">
       <div className="image">
         <Link to={`/post/${_id}`}>
-          <img src={"http://localhost:5000/" + cover} alt="blog"/>
+          <img src={"https://univibes-backend.onrender.com/" + cover} alt="blog"/>
         </Link>
       </div>
       <div className="texts">

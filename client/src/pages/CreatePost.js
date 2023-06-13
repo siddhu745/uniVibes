@@ -27,7 +27,7 @@ export default function CreatePost() {
     data.set("file", files[0]);
     data.set('option',selectedOption)
 
-    const response = await fetch("http://localhost:5000/post", {
+    const response = await fetch("https://univibes-backend.onrender.com/post", {
       method: "POST",
       body: data,
       credentials: "include",

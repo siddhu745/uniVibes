@@ -11,7 +11,7 @@ export default function LoginPage() {
 
   async function login(ev) {
     ev.preventDefault();
-    var response = await fetch("http://localhost:5000/login", {
+    var response = await fetch("https://univibes-backend.onrender.com/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
