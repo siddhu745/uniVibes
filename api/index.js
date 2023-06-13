@@ -33,10 +33,15 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 
 app.get("/profile", (req, res) => {
   const { token } = req.cookies;
-  jwt.verify(token, secret, {}, (err, info) => {
+  try{
+    jwt.verify(token, secret, {}, (err, info) => {
     if (err) throw err;
     res.json(info);
   });
+  } catch(e){
+    res.status(400).json(e);
+  }
+  
   // res.json(req.cookies);
 });
 
