@@ -17,7 +17,7 @@ export default function Header() {
     });
 
     // eslint-disable-next-line
-  }, 1000);
+  }, 5000);
 
   function logout() {
     fetch("https://univibes-backend.onrender.com/logout", {
